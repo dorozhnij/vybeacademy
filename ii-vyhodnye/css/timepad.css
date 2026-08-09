@@ -1,0 +1,322 @@
+/* Timepad widget theme — ИИ-выходные
+   Loaded inside the widget iframe via loadCSS.
+   Brand: #6139E7 · fonts: Lack + Manrope
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "Lack";
+  src: url("https://vybeacademy.ru/ii-vyhodnye/fonts/Lack-Regular.otf") format("opentype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lack";
+  src: url("https://vybeacademy.ru/ii-vyhodnye/fonts/Lack-Italic.otf") format("opentype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --tp-accent: #6139e7;
+  --tp-accent-deep: #4a24c4;
+  --tp-accent-soft: rgba(97, 57, 231, 0.12);
+  --tp-surface: #faf9fc;
+  --tp-elevated: #ffffff;
+  --tp-sunken: #f1eff8;
+  --tp-ink: #12101a;
+  --tp-muted: #5c5770;
+  --tp-subtle: #918ba8;
+  --tp-hairline: #e6e2f2;
+  --tp-radius: 8px;
+}
+
+html,
+body,
+.i-page,
+.b-registration,
+.tpwf,
+.twf {
+  background: var(--tp-surface) !important;
+  color: var(--tp-ink) !important;
+  font-family: "Manrope", system-ui, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--tp-accent) !important;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--tp-accent-deep) !important;
+}
+
+/* Headings / tickets titles */
+.b-unit__header,
+.b-unit__header_size_large,
+.b-unit__header_size_mid,
+.b-unit__header_size_mid_small,
+.b-unit__header_size_small,
+.b-unit__header_payment_value,
+.t-caption,
+h1, h2, h3, h4 {
+  font-family: "Lack", "Manrope", system-ui, sans-serif !important;
+  color: var(--tp-ink) !important;
+  letter-spacing: -0.02em;
+  font-weight: 600 !important;
+}
+
+.b-unit__text,
+.b-unit__gray-text,
+.b-unit__text_color_gray,
+.b-unit__text_size_small,
+.b-unit__text_size_smaller,
+p,
+label,
+td,
+th,
+li,
+span {
+  font-family: "Manrope", system-ui, sans-serif !important;
+}
+
+.b-unit__text_color_blue,
+.b-unit__header_color_blue,
+.b-unit_color_blue,
+.b-unit__text_color_orange {
+  color: var(--tp-accent) !important;
+}
+
+/* Cards / plates */
+.b-card,
+.b-unit,
+.b-registration,
+.l-unit,
+[class*="b-pro-widget"],
+.b-reg-table,
+table {
+  border-color: var(--tp-hairline) !important;
+}
+
+.b-card,
+.b-unit,
+.l-unit {
+  background: var(--tp-elevated) !important;
+  border-radius: 14px !important;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+textarea,
+select,
+.b-input,
+.form-control {
+  font-family: "Manrope", system-ui, sans-serif !important;
+  color: var(--tp-ink) !important;
+  background: var(--tp-elevated) !important;
+  border: 1.5px solid var(--tp-hairline) !important;
+  border-radius: var(--tp-radius) !important;
+  box-shadow: none !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+.form-control:focus {
+  border-color: var(--tp-accent) !important;
+  outline: 2px solid var(--tp-accent-soft) !important;
+  outline-offset: 1px;
+  box-shadow: none !important;
+}
+
+/* Primary buttons (Timepad typo: wiget) */
+.b-pro-wiget__button,
+.b-pro-wiget__reg-button,
+.b-pro-wiget__pay-button,
+.b-pro-wiget__send-covid-data-button,
+.b-pro-widget__open-button,
+.b-pro-widget__btn_small,
+.b-pro-widget__small-button,
+.b-printable-ticket__button,
+.b-pro-widget__default-btn.b-pro-widget__default-btn_hover_blue,
+button.btn,
+.btn-primary,
+a.btn-primary,
+button[type="submit"],
+input[type="submit"] {
+  font-family: "Manrope", system-ui, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em;
+  background: var(--tp-accent) !important;
+  background-color: var(--tp-accent) !important;
+  background-image: none !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: var(--tp-radius) !important;
+  box-shadow: 0 12px 40px rgba(97, 57, 231, 0.28) !important;
+  transition: background-color 120ms ease, transform 120ms ease !important;
+}
+
+.b-pro-wiget__button:hover,
+.b-pro-wiget__reg-button:hover,
+.b-pro-wiget__pay-button:hover,
+.b-pro-widget__open-button:hover,
+.btn-primary:hover,
+button[type="submit"]:hover,
+a.btn-primary:hover,
+.b-pro-wiget__button:focus,
+.b-pro-wiget__reg-button:focus,
+.b-pro-wiget__pay-button:focus {
+  background: var(--tp-accent-deep) !important;
+  background-color: var(--tp-accent-deep) !important;
+  color: #ffffff !important;
+}
+
+.b-pro-wiget__button:active,
+.b-pro-wiget__reg-button:active,
+.b-pro-wiget__pay-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 6px 20px rgba(97, 57, 231, 0.22) !important;
+}
+
+.b-pro-wiget__button_subtile {
+  background: var(--tp-sunken) !important;
+  color: var(--tp-ink) !important;
+  box-shadow: none !important;
+}
+
+.b-pro-wiget__button_subtile:hover {
+  background: var(--tp-accent) !important;
+  color: #ffffff !important;
+}
+
+.b-pro-widget__default-btn {
+  font-family: "Manrope", system-ui, sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--tp-accent) !important;
+  background: var(--tp-sunken) !important;
+  border: 1.5px solid var(--tp-hairline) !important;
+  border-radius: var(--tp-radius) !important;
+}
+
+/* Radio / checkbox accents */
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--tp-accent);
+}
+
+/* Tables / ticket rows */
+.b-reg-table,
+.b-reg-table td,
+.b-reg-table th,
+table.table,
+.table > thead > tr > th,
+.table > tbody > tr > td {
+  border-color: var(--tp-hairline) !important;
+  color: var(--tp-ink) !important;
+  font-family: "Manrope", system-ui, sans-serif !important;
+}
+
+.table > thead > tr > th {
+  font-family: "Lack", "Manrope", system-ui, sans-serif !important;
+  font-weight: 600 !important;
+  color: var(--tp-muted) !important;
+  text-transform: none;
+}
+
+/* Plus/minus counters */
+.plusminus,
+.b-plusminus,
+[class*="plusminus"] button,
+[class*="plusminus"] .btn {
+  border-radius: var(--tp-radius) !important;
+  border-color: var(--tp-hairline) !important;
+  color: var(--tp-accent) !important;
+  font-family: "Manrope", system-ui, sans-serif !important;
+}
+
+/* Time slots / accent chips */
+.__time,
+.__time_active {
+  background-color: var(--tp-accent) !important;
+  color: #fff !important;
+  border-radius: var(--tp-radius) !important;
+}
+
+.__time:hover {
+  background-color: var(--tp-accent-deep) !important;
+}
+
+/* Footer / terms */
+.b-registration__footer,
+.b-pro-widget__terms-popup {
+  font-family: "Manrope", system-ui, sans-serif !important;
+  color: var(--tp-muted) !important;
+  border-radius: var(--tp-radius) !important;
+}
+
+.b-pro-widget__terms-popup {
+  background: var(--tp-accent-soft) !important;
+  border-color: color-mix(in srgb, #6139e7 30%, #e6e2f2) !important;
+  color: var(--tp-ink) !important;
+}
+
+.b-pro-widget__terms-popup-arrow {
+  background-color: var(--tp-accent-soft) !important;
+  border-color: color-mix(in srgb, #6139e7 30%, #e6e2f2) !important;
+}
+
+/* Errors */
+.payform-error,
+#pay_errors {
+  border-color: #d64545 !important;
+  background: #fff1f1 !important;
+  border-radius: var(--tp-radius) !important;
+  font-family: "Manrope", system-ui, sans-serif !important;
+}
+
+/* SVG icons fill */
+svg {
+  fill: var(--tp-accent);
+}
+
+/* Soften Bootstrap leftovers */
+.well,
+.panel,
+.panel-default,
+.panel-body {
+  background: var(--tp-elevated) !important;
+  border-color: var(--tp-hairline) !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+}
+
+.alert-info,
+.alert-warning {
+  border-radius: var(--tp-radius) !important;
+  font-family: "Manrope", system-ui, sans-serif !important;
+}
+
+.alert-info {
+  background: var(--tp-accent-soft) !important;
+  border-color: transparent !important;
+  color: var(--tp-ink) !important;
+}
+
+/* Hide Timepad chrome that fights the landing look, if present */
+.b-promoted-links,
+.b-kinopoisk {
+  display: none !important;
+}
