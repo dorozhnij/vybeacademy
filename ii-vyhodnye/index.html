@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=7" />
+  <link rel="stylesheet" href="css/styles.css?v=8" />
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
@@ -139,21 +139,150 @@
           <p class="eyebrow">Результат</p>
           <h2>Что можно сделать за выходные</h2>
           <p>
-            Каждый сможет разработать сервис с помощью ИИ-агента,
-            который решает вашу рабочую или бытовую задачу.
+            Ниже — примеры сервисов, которые можно собрать с ИИ-агентом
+            под рабочую или бытовую задачу. Жанр разный, цикл один:
+            данные → логика → интерфейс → публикация.
           </p>
         </div>
 
-        <ul class="quest-grid reveal">
-          <li class="quest quest-wide"><span class="q-num">01</span>Телеграм-бот</li>
-          <li class="quest"><span class="q-num">02</span>Веб-приложение</li>
-          <li class="quest"><span class="q-num">03</span>Сайт или лендинг</li>
-          <li class="quest"><span class="q-num">04</span>Очистка и обработка таблиц</li>
-          <li class="quest quest-wide"><span class="q-num">05</span>Дашборд или отчет из разрозненных файлов</li>
-          <li class="quest"><span class="q-num">06</span>Мини-игра или викторина</li>
-          <li class="quest"><span class="q-num">07</span>Конвейер карточек для соцсетей</li>
-          <li class="quest quest-wide"><span class="q-num">08</span>Поиск и сбор данных с сайтов в таблицу</li>
-        </ul>
+        <div class="cases">
+          <article class="case reveal">
+            <div class="case-media">
+              <img
+                src="assets/cases/dashboard.png"
+                alt="Дашборд цены земельных участков по регионам"
+                width="800"
+                height="1200"
+                loading="lazy"
+              />
+            </div>
+            <div class="case-body">
+              <span class="case-badge">Дашборд</span>
+              <h3>Рынок участков ИЖС и СНТ по регионам</h3>
+              <p class="case-pipe">Сбор данных → анализ → визуализация в цветах бренда → деплой и домен</p>
+              <p>
+                Дашборд по данным рынка земли: 73 региона, по каждому — средняя цена сотки
+                для ИЖС и СНТ. Видно среднюю цену, сезонность и тренд: растет, падает
+                или стоит на месте. Подойдет и для внутреннего заказчика, и для внешнего.
+              </p>
+              <p>
+                Позже выпустим отдельный разбор с инсайтами. Пока можно открыть свой регион.
+              </p>
+              <a
+                class="case-link"
+                href="https://landrice2026-dorozhnij.onreza.app/landrice_2026/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Смотреть дашборд</a>
+            </div>
+          </article>
+
+          <article class="case reveal">
+            <div class="case-media">
+              <img
+                src="assets/cases/report.png"
+                alt="Отчет по земельному участку с разметкой ВРИ"
+                width="800"
+                height="1200"
+                loading="lazy"
+              />
+            </div>
+            <div class="case-body">
+              <span class="case-badge">Отчет</span>
+              <h3>Генератор аналитики по ПЗЗ</h3>
+              <p class="case-pipe">Сбор данных → парсинг PDF → визуализация</p>
+              <p>
+                На вход — сведения об участке и PDF с правилами землепользования и застройки.
+                На выход — аналитика по разрешенным ВРИ: что на участке можно строить
+                и под какие виды использования он подходит.
+              </p>
+            </div>
+          </article>
+
+          <article class="case reveal">
+            <div class="case-media">
+              <img
+                src="assets/cases/game.png"
+                alt="Симулятор торгов: оценка цены лота"
+                width="800"
+                height="1200"
+                loading="lazy"
+              />
+            </div>
+            <div class="case-body">
+              <span class="case-badge">Игра на основе данных</span>
+              <h3>«Угадай, за сколько ушел лот»</h3>
+              <p class="case-pipe">Данные аукционов → тренажер → сравнение с фактом</p>
+              <p>
+                Игра на данных реальных аукционов ГИС Торги по Московской области
+                за 2024–2026 годы. Видите участок — фото, ВРИ, площадь, стартовую цену —
+                выбираете, за сколько он уйдет, запускаете торги и сравниваете оценку
+                с фактической ценой.
+              </p>
+              <p>
+                Внутри: 10 лотов, прогресс по ходу и итог — насколько вы «переплатили»
+                или «недооценили».
+              </p>
+              <a
+                class="case-link"
+                href="https://dorozhnij.ru/simulator-torgov"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Играть</a>
+            </div>
+          </article>
+
+          <article class="case reveal">
+            <div class="case-media">
+              <img
+                src="assets/cases/map.png"
+                alt="Интерактивная карта транспортной модели Москвы и области"
+                width="1200"
+                height="900"
+                loading="lazy"
+              />
+            </div>
+            <div class="case-body">
+              <span class="case-badge">Интерактивная карта</span>
+              <h3>Транспортная модель входящего трафика</h3>
+              <p class="case-pipe">Сбор данных → транспортная модель → карта с учетом пробок</p>
+              <p>
+                Карта отвечает на вопрос: как быстро можно доехать внутрь выбранного района
+                в утренний пик. Для каждого района считается входящий трафик
+                с учетом загруженности дорог.
+              </p>
+              <p>
+                Модель прогнозирует загрузку «из всех районов во все остальные»
+                по численности населения и числу рабочих мест. Маршруты сначала считаются
+                по пустой сети, затем потоки пересчитываются в несколько итераций —
+                так система приходит к пользовательскому равновесию.
+              </p>
+            </div>
+          </article>
+
+          <article class="case reveal">
+            <div class="case-media">
+              <img
+                src="assets/cases/bot.png"
+                alt="Telegram-бот с участками у воды из ГИС Торги"
+                width="800"
+                height="1200"
+                loading="lazy"
+              />
+            </div>
+            <div class="case-body">
+              <span class="case-badge">Telegram-бот</span>
+              <h3>Участки у воды из ГИС Торги</h3>
+              <p class="case-pipe">Сбор с сайта → фильтрация → выдача в чат</p>
+              <p>
+                Бот забирает лоты с ГИС Торги, считает близость участка к воде
+                и показывает только те, что рядом с водоемами: фото, адрес, ВРИ,
+                кадастровый номер, площадь и ссылка на карту.
+                Вместо ручного просмотра ленты — готовая подборка под запрос.
+              </p>
+            </div>
+          </article>
+        </div>
 
         <p class="note reveal">
           В пятницу поможем оформить замысел до объема, который можно закончить за три дня.
