@@ -39,4 +39,23 @@
       });
     }, true);
   }
+
+  const stickyCta = document.getElementById("stickyCta");
+  const pricing = document.getElementById("pricing");
+  if (stickyCta && pricing) {
+    document.body.classList.add("has-sticky-cta");
+
+    const updateStickyCta = () => {
+      const scrollY = window.scrollY || window.pageYOffset;
+      const showAfter = window.innerHeight * 0.6;
+      const pricingTop = pricing.getBoundingClientRect().top + scrollY;
+      const pricingVisible = scrollY + window.innerHeight > pricingTop + 80;
+
+      stickyCta.hidden = !(scrollY > showAfter && !pricingVisible);
+    };
+
+    updateStickyCta();
+    window.addEventListener("scroll", updateStickyCta, { passive: true });
+    window.addEventListener("resize", updateStickyCta);
+  }
 })();
